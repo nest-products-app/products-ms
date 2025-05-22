@@ -14,7 +14,7 @@ export class ProductsController {
   create(@Payload() createProductDto: CreateProductDto) {
     return this.productsService.create(createProductDto);
   }
-
+// prueba
   // @Get()
   @MessagePattern({ cmd: 'find_all_product' })
   findAll(@Payload() paginationDto: PaginationDto) {
